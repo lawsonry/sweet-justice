@@ -203,7 +203,7 @@
   }
 
   // javascript
-  function sweet_justice_jq() {
+  function sweet_justice_js() {
   	var justiceForAll = document.querySelectorAll('.sweet-justice, .sweet-hyphens');
   	for (var i = justiceForAll.length - 1; i >= 0; i--) {
   		justify_my_love(justiceForAll[i]);
@@ -235,6 +235,6 @@
         sweet_justice_yui(Y);
     });
   } else {
-  	window.onload = sweet_justice_jq;
+  	window.onload = sweet_justice_js;
   }
 }();
