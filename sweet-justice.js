@@ -202,6 +202,15 @@
     Y.one('body').on('copy', copy_protect);
   }
 
+  // javascript
+  function sweet_justice_js() {
+  	var justiceForAll = document.querySelectorAll('.sweet-justice, .sweet-hyphens');
+  	for (var i = justiceForAll.length - 1; i >= 0; i--) {
+  		justify_my_love(justiceForAll[i]);
+  	};
+  	document.body.oncopy = copy_protect;
+  }
+
   // Insert class styles. More mindless browser-banging. *sigh*
   try {
     var style = document.createElement('style');
@@ -225,5 +234,7 @@
     YUI().use('node', function(Y) {
         sweet_justice_yui(Y);
     });
+  } else {
+  	window.onload = sweet_justice_js;
   }
 }();
